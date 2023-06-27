@@ -24,11 +24,11 @@ var transporter = nodemailer.createTransport({
   });
   
   var mailOptions = {
-      from : email,
-      to : "tarunkumarmahto2000@gmail.com",
-      subject : name,
-      text : massage
-  }
+    from :email,
+    to :  "tarunkumarmahto2000@gmail.com",
+    subject : " Name- " + name + " | "+" Email- "+email,
+    text : massage
+}
   
   transporter.sendMail(mailOptions , function(error,info){
       if(error){
